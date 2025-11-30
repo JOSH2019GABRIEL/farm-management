@@ -17,11 +17,3 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
-```
-
-## **If Deploying on Render:**
-
-1. Make sure you've set the **Port** to `9090` in Render dashboard
-2. Add this environment variable in Render:
-```
-   PORT=9090
