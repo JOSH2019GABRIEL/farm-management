@@ -1,0 +1,6 @@
+# Use the same image as docker-compose
+FROM maildev/maildev
+
+# Expose SMTP and Web UI ports
+EXPOSE 1025
+EXPOSE 1080
